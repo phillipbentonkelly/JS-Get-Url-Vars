@@ -8,6 +8,7 @@ This extension maps URL query params to the object instance when initiated.
 URL: http://pkelly/FileResource/themes/projects/hack2013/?apiKey=123MyKey&format=json&q=New%20Girl
 
 In HTML:
+<div class="highlight">
 <pre>
 <script src="getUrlVars.js"></script>
 
@@ -31,3 +32,4 @@ mapUrlVars = {
   match: "New%20Girl"
 };
 </pre>
+</div>

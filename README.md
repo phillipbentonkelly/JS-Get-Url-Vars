@@ -14,10 +14,10 @@ In HTML:
 Init in a 'Script' Tag (jQuery.ready if you want, but it works without it):
 
 <script>
-  //GetUrlVars().isAvailable('q', 'string');
-  var mapUrlVars = GetUrlVars();
+//GetUrlVars().isAvailable('q', 'string');
+var mapUrlVars = GetUrlVars();
 
-  console.log(mapUrlVars.q);
+console.log(mapUrlVars.q);
 </script>
 
 Console output:

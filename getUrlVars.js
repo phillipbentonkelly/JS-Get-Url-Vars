@@ -1,8 +1,8 @@
-var MapUrlVars = {};
+var GetUrlVars = {};
 (function(){
-	MapUrlVars = function(){
-        if( !(this instanceof MapUrlVars))
-            return new MapUrlVars();
+	GetUrlVars = function(){
+        if( !(this instanceof GetUrlVars))
+            return new GetUrlVars();
 
         this.response = { found: false, queryParams: {}, match: {} };
 		this.queryScope = window.location;
@@ -21,7 +21,7 @@ var MapUrlVars = {};
 		}
 	};
 
-	MapUrlVars.prototype = {
+	GetUrlVars.prototype = {
 		isAvailable: function( queryParam, type ){
 			if(typeof(this.response.queryParams[queryParam]) === type && this.response.queryParams[queryParam].length > 0){
 				this.response.found = true;
@@ -31,5 +31,5 @@ var MapUrlVars = {};
 			return this.response;
 		}
 	};
-	//MapUrlVars().isAvailable('q', 'string');
+	//GetUrlVars().isAvailable('q', 'string');
 })();
